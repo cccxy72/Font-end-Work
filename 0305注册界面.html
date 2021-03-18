@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生注册页面</title>
+</head>
+<body>
+    <fieldset style="background-color:antiquewhite;">
+        <legend>注册</legend>
+        <div >
+            <table>
+                <tr>
+                    <td>用户名</td>
+                    <td>
+                        <input type="text" id="username">
+                    </td>
+                    <td>
+                        <font style="color: red;">*</font>
+                    </td>
+                    <td>
+                        <font id="tips" style="color: red; font-size: small;"></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>邮箱</td>
+                    <td>
+                        <input type="email">
+                    </td>
+                    <td>
+                        <font style="color: red;">*</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>学号</td>
+                    <td>
+                        <input type="text" pattern="[0-9]+">
+                    </td>
+                    <td>
+                        <font style="color: red;">*</font>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="username()">注册</button>
+    </fieldset>
+</body>
+<script>
+    function username(){
+        var name = document.getElementById("username").value;
+        if(name.length<=6){
+            document.getElementById("tips").innerHTML = "用户名长度需要大于6位数";
+        }
+        if(!Check(name)){
+            document.getElementById("tips").innerHTML = "用户名需要英文和数字组合";
+        }
+    }
+    function Check(c){
+        var cs =  /^(([a-z]+[0-9]+)|([0-9]+[a-z]+))[a-z0-9]*$/i; 
+        if (!cs.test(c))  {  
+            return false;  
+        } else {  
+            return true;  
+        }  
+    }
+</script>
+</html>
