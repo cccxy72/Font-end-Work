@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.header {
+  height: 80;
+  margin: 0px auto;
+}
+a {
+  text-decoration: none;
+}
+.header {
+    height: 80px;
+    background-color: whites;
+    margin: 0px auto;
+  }
+
+  .logimg {
+    transform: scale(1);
+    float: right;
+    margin-left: 5px;
+}
+.title {
+    padding-top: 25px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #64403a;
+    float: right;
+}
+  
+  /* 设置顶部导航栏的样式 */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(77, 55, 55);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .login {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .loginbox:hover .login {
+    background-color:#b66a6a;
+  }
+  
+  li.loginbox {
+    display: inline-block;
+    float: right;
+  }
+  
+  .inlogin {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .inlogin a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .inlogin a:hover {background-color: #f1f1f1;}
+  
+  .loginbox:hover .inlogin {
+    display: block;
+  }
+  /* 创建并排的三个非等列 */
+.column {
+    float: left;
+    width: 28%;
+    padding: 15px;
+    margin: 15px;
+    background-color: #fdded84f;
+    border-radius:30px 0 30px 0;
+    box-shadow: 2px 2px 4px #755a5ab4;
+  }
+  
+  /* 清除列之后的浮动 */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 响应式布局 - 创建堆叠而非并排的三列 */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  #content {
+    height: 410px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    background-color: #b1767641;
+}
+.bgdiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;                 
+    transition: 2s;
+    transform: translate(-50%,-50%);
+}
+.bg img.on {
+    opacity: 1;
+}
+.footer {
+    width: 1000px;
+    height: 115px;
+    margin: auto;
+    position: relative;
+}
+.codediv {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+.codediv>img {
+    width: 100px;
+    height: 80px;
+    display: block;
+}
+.text {
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.link {
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+}
+.link>a {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #959595;
+}
+.link>a:hover {
+    color: lightblue;
+}
+.copyright {
+    font-size: 11px;
+    margin: auto;
+    height: 33px;
+    text-align: center;
+}
+.copyright>span {
+    color: #959595;
+}

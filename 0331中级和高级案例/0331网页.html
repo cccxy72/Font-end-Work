@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style0.css">
+    <title>3.31高级教程案例</title>
+</head>
+<body>
+    <div >
+        <div class="header w" >
+            <img src="logo.jpg" class="logimg">
+            <div class="title">3.31高级教程案例</div>
+      </div>
+      
+      <div class="topnav w">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Others</a></li>
+            <li class="loginbox">
+              <a href="#" class="login">Login</a>
+              <div class="inlogin">
+                <a href="#">Login</a>
+                <a href="#">Regist</a>
+                <a href="#">Exit</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div id="content">
+        <div class="bgdiv">
+            <div class="bg">
+                <img class="on" src="bg.jpg" alt="">
+                <img class="" src="bg2.jpg" alt="">
+                <img class="" src="bg3.jpg" alt="">
+            </div>
+        </div>
+      </div>
+      <div class="row w">
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="codediv">
+            <img src="foot.jpg">
+            <div class="text"></div>
+        </div>
+        <div class="link">
+            <a href="https://www.baidu.com/">百度</a>
+            <a href="https://www.baidu.com/">百度</a>
+            <a href="https://www.baidu.com/">百度</a>
+            <a href="https://www.baidu.com/">百度</a>
+        </div>
+        <div class="copyright">
+            <span>联系电话 xxx-xxx-xxxx</span>
+            <span style="margin: 0 7px">|</span>
+            <span>Copyright©xxx科技股份有限公司 All Rights Reserved
+                <a href="crlink">某ICP备 00000000号</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var aImages = document.querySelectorAll('.bg img');
+    var index= 0;                                          //记录下标
+    auto();
+    
+    function auto(){
+            setInterval(function () {                          //定时器函数,让它按顺序不停循环
+                aImages[index].className = '';            
+                index++;
+                console.log(index);     
+                if(index>=3)        
+                {
+                    index=0;
+                };
+                aImages[index].className = 'on';
+            },2000)
+    } 
+</script>
