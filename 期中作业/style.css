@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .w {
+    width: 800px;
+    margin: auto;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  .header {
+    height: 80px;
+    background-color:white;
+    margin: 0px auto;
+  }
+
+  .logimg {
+    transform: scale(1);
+    float: left;
+    margin-left: 5px;
+}
+.title {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #030303;
+    float: right;
+}
+
+.info>p{
+    margin: 0;
+    width: 220px;
+    display: inline-block;
+    padding: 10px;
+    text-indent: 15px;
+}
+.container{
+    border:1px solid rgb(255, 255, 255);
+    width: 800px;
+    height: 800px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:50px 0 50px 0;
+}
+.baseinfo{
+    height: 16%;
+}
+.info{
+    width: 800px;
+    float: left;
+}
+.education{
+    height: 20%;
+}
+.experience{
+    height: 24%;
+}
+.skills{
+    height: 18%;
+}
+.me{
+    height: 5%;
+}
+.line{
+    width:760px;
+    height: 40px;
+    background-color: rgb(39, 78, 156);
+    color: white;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    margin:10px 18px 0 18px;
+}
+.experience .l {
+    margin-bottom: 10px;
+}
+.linetitle{
+    color:  rgb(73, 109, 182);
+    font-size: 16px;
+    margin-left: 20px;
+}
+.linetitle span{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+.linetitle span:first-child
+{
+   text-align: left;
+}
+.linetitle span:last-child{
+    text-align: right;
+}
+.text{
+    text-indent: 30px;
+
+}
+.text:before{
+    content: "·";
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: bolder;
+}
